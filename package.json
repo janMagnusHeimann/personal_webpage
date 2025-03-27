@@ -9,16 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-  "framer-motion": "^6.2.8",
-  "next": "12.1.0",
-  "next-themes": "^0.1.1",
-  "nodemailer": "^6.7.2",
-  "react": "17.0.2",
-  "react-dom": "17.0.2"
-},
-"devDependencies": {
-  "autoprefixer": "^10.4.2",
-  "postcss": "^8.4.6",
-  "tailwindcss": "^3.0.18"
-}
+    "framer-motion": "^6.2.8",
+    "next": "12.1.0",
+    "next-themes": "^0.1.1",
+    "nodemailer": "^6.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.12",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18",
+    "typescript": "^5.8.2"
+  }
 }
