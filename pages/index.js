@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import Section from '../components/Section';
 import About from '../components/About';
 import Projects from '../components/Projects';
-import Publications from '../components/Publications';
+import Publications from '../components/publications';
 import Contact from '../components/Contact';
 
 export default function Home() {
