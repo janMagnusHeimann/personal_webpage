@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import RocketAnimation from '../components/RocketAnimation';
+import RocketAnimation from '../components/rocketAnimation';
 
 export default function Projects() {
   return (
