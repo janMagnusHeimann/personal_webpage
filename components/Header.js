@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link'; // Added import
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
@@ -10,11 +11,11 @@ export default function Header() {
   if (!mounted) return null;
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#publications', label: 'Publications' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/#home', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/projects', label: 'Projects' }, // Updated to navigate to /projects
+    { href: '/#publications', label: 'Publications' },
+    { href: '/#contact', label: 'Contact' },
   ];
 
   return (
@@ -34,9 +35,11 @@ export default function Header() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a href={item.href} className="hover:text-blue-400 transition-colors">
-                {item.label}
-              </a>
+              <Link href={item.href}>
+                <a className="hover:text-blue-400 transition-colors">
+                  {item.label}
+                </a>
+              </Link>
             </motion.li>
           ))}
           <motion.button
